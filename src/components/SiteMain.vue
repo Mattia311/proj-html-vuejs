@@ -49,11 +49,30 @@
                   </div>
               </div>
               <div class="dining">
-                  <h1>THE BEST TABLE IN <br>TOWN</h1>
+                  <h2>THE BEST TABLE IN <br>TOWN</h2>
                   <p class="text-start">Pellentesque vitae viverra risus, sagittis. <br>Venenatis ridiculus scelerisque nisi in urna <br>nulla. Sit tempor a et nisl, ac felis.</p>
                   <button>EXPLORE THE MENU</button>
               </div>
           </div>
+      </div>
+      <div class="main_third">
+          <h4 class="text-center">What critics are saying about us</h4>
+          <div class="container row">
+              <div class="main_third_top d-flex">
+                  <div class="main_third_top_left">
+                      <img src="../assets/images/blog72x.jpg" alt="">
+                  </div>
+                  <div class="main_third_top_right">
+                      <p>MEGGY STEWART</p>
+                      <h2 class="title_new_york">NEW YORK TIMES</h2>
+                      <p class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+                      <hr class="line_main_third">
+                      
+                  </div>
+              </div>
+
+          </div>
+
       </div>
   </div>
 </template>
@@ -122,6 +141,7 @@ export default {
         }
     }
     .main_second {
+        margin-bottom: 100px;
         .img_main_second {
             width: 100%;
             height: 610px;
@@ -148,7 +168,7 @@ export default {
                 }
             }
             .dining {
-                h1 {
+                h2 {
                     color: white;
                     margin-left: 170px;
                     margin-top: 15px;
@@ -168,6 +188,48 @@ export default {
                     width: 174px;
                     height: 36px;
                     margin-top: 40px;
+
+                }
+            }
+        }
+    }
+    .main_third {
+        h4 {
+            margin-bottom: 80px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            .main_third_top {
+                img {
+                   width: 540px;
+                  height: 605px;
+                }
+                .main_third_top_right {
+                    background: black;
+                    width: 570px;
+                    height: 605px;
+                    p {
+                        color: #9BA59E;
+                        margin-top: 130px;
+                        margin-left: 120px;
+                    }
+                    .title_new_york {
+                        color: white;
+                        margin-left: 120px;
+                        margin-top: 30px;
+                    }
+                    .stars {
+                        color: white;
+                        margin-top: 30px;
+                    }
+                    .line_main_third {
+                        height: 2px;
+                        color: white;
+                        width: 40px;
+                        margin-left: 120px;
+                        margin-top: 40px;
+                    }
 
                 }
             }
