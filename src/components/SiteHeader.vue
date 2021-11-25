@@ -23,15 +23,8 @@
               <img class="img_header" src="../assets/images/slider52x.jpg" alt="">
           </div>
           <div>
-              <ul class="d-flex">
-                  <li><nav><a href=""><strong>Home</strong></a></nav></li>
-                  <li><nav><a href="">Culinary History</a></nav></li>
-                  <li><nav><a href="">Our Team</a></nav></li>
-                  <li><nav><a href="">Our Menu</a></nav></li>
-                  <li><nav><a href="">Takeout <button>New</button></a></nav></li>
-                  <li><nav><a href="">Bulletin</a></nav></li>
-                  <li><nav><a href="">Reservation</a></nav></li>
-                  <li><nav><a href=""><i class="fas fa-shopping-cart"></i></a></nav></li>
+              <ul class="d-flex"  >
+                  <li v-for="(list,index) in menu" :key="index"><nav><a href="" :list="list">{{list}}</a></nav></li>
               </ul>
           </div>
       </div>
@@ -40,6 +33,11 @@
 
 <script>
 export default {
+    data() {
+        return {
+            menu : ['Home','Culinary History','Our Team','Our Menu','Takeout','Bulletin','Reservation',]
+        }
+    }
 
 }
 </script>
