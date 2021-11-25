@@ -1,6 +1,10 @@
 <template>
-  <div>
-
+  <div class="main">
+      <div>
+          <div></div>
+          <div></div>
+      </div>
+      <div></div>
   </div>
 </template>
 

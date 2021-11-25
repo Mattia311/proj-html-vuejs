@@ -19,7 +19,21 @@
           </div>
       </div>
       <div class="header_right">
-          <img class="img_header" src="../assets/images/slider52x.jpg" alt="">
+          <div>
+              <img class="img_header" src="../assets/images/slider52x.jpg" alt="">
+          </div>
+          <div>
+              <ul class="d-flex">
+                  <li><nav><a href=""><strong>Home</strong></a></nav></li>
+                  <li><nav><a href="">Culinary History</a></nav></li>
+                  <li><nav><a href="">Our Team</a></nav></li>
+                  <li><nav><a href="">Our Menu</a></nav></li>
+                  <li><nav><a href="">Takeout <button>New</button></a></nav></li>
+                  <li><nav><a href="">Bulletin</a></nav></li>
+                  <li><nav><a href="">Reservation</a></nav></li>
+                  <li><nav><a href=""><i class="fas fa-shopping-cart"></i></a></nav></li>
+              </ul>
+          </div>
       </div>
   </div>
 </template>
@@ -87,8 +101,28 @@ export default {
         .img_header {
             width: 840px;
             height: 800px;
-           
+            position: relative;
         }
+        ul {
+            position: absolute;
+            top: 30px;
+            margin-left: 27px;
+            li {
+            list-style: none;
+            margin-right: 30px;
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 14px;
+            }
+            button {
+                background: transparent;
+                color: white;
+                border: 1px solid white;
+            }
+        }
+        }
+        
     }
 }
 
