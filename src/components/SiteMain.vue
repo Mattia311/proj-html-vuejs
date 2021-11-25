@@ -36,7 +36,24 @@
                   <button>LEARN MORE ABOUT US</button>
               </div>
           </div>
-
+      </div>
+      <div class="main_second d-flex row">
+          <div class="col-7">
+              <img class="img_main_second" src="../assets/images/slider32x.jpg" alt="">
+          </div>
+          <div class="col-5">
+              <div class="d-flex text">
+                  <div class="line"></div>
+                  <div>
+                      <p>FINE DINING EXPERIENCE</p>
+                  </div>
+              </div>
+              <div class="dining">
+                  <h1>THE BEST TABLE IN <br>TOWN</h1>
+                  <p class="text-start">Pellentesque vitae viverra risus, sagittis. <br>Venenatis ridiculus scelerisque nisi in urna <br>nulla. Sit tempor a et nisl, ac felis.</p>
+                  <button>EXPLORE THE MENU</button>
+              </div>
+          </div>
       </div>
   </div>
 </template>
@@ -49,7 +66,7 @@ export default {
 
 <style lang="scss">
 .main {
-    height: 1200px;
+    height: 100%;
     .main_first {
         margin-top: 110px;
         .main_top_left {
@@ -101,6 +118,59 @@ export default {
             width: 190px;
             height: 36px;
             margin-top: 17px;
+            margin-bottom: 150px;
+        }
+    }
+    .main_second {
+        .img_main_second {
+            width: 100%;
+            height: 610px;
+            object-fit: cover;
+            object-position: top;
+        }
+        .col-7 {
+            padding-right: 0px;
+        }
+        .col-5 {
+            background: black;
+            .text {
+                margin-top: 150px;
+                margin-left: 90px;
+                .line {
+                border-top: 1px solid #9BA59E;;
+                width: 45px;
+                margin-top: 8px;
+                margin-right: 35px;
+                }
+                p {
+                color: #9BA59E;
+                font-size: 13px;
+                }
+            }
+            .dining {
+                h1 {
+                    color: white;
+                    margin-left: 170px;
+                    margin-top: 15px;
+                    line-height: 51px;
+                }
+                p {
+                   color: #9BA59E;
+                   margin-left: 170px;
+                   margin-top: 40px;
+                }
+                button {
+                    margin-left: 170px;
+                    background: black;
+                    color: white;
+                    border: 1px solid white;
+                    font-size: 13px;
+                    width: 174px;
+                    height: 36px;
+                    margin-top: 40px;
+
+                }
+            }
         }
     }
     

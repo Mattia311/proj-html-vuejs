@@ -25,6 +25,7 @@
           <div>
               <ul class="d-flex"  >
                   <li v-for="(list,index) in menu" :key="index"><nav><a href="" :list="list">{{list}}</a></nav></li>
+                  <li><nav><a href=""><i class="fas fa-shopping-cart"></i></a></nav></li>
               </ul>
           </div>
       </div>
@@ -104,10 +105,10 @@ export default {
         ul {
             position: absolute;
             top: 30px;
-            margin-left: 27px;
+            margin-left: 45px;
             li {
             list-style: none;
-            margin-right: 30px;
+            margin-right: 35px;
             a {
                 text-decoration: none;
                 color: white;
