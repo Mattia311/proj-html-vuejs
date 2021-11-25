@@ -63,17 +63,27 @@
                       <img src="../assets/images/blog72x.jpg" alt="">
                   </div>
                   <div class="main_third_top_right">
-                      <p>MEGGY STEWART</p>
+                      <p class="meggy">MEGGY STEWART</p>
                       <h2 class="title_new_york">NEW YORK TIMES</h2>
                       <p class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
-                      <hr class="line_main_third">
-                      
+                      <div class="line_main_third"></div>
+                      <p class="text_main_top_right">Non arcu mauris tortor ultrices mollis tellus <br>euismod fermentum. Habitant amet tincidunt <br>id sapien accumsan sed at. </p>
+                      <p class="text_main_top_right">Mmalesuada ullamcorper amet. Pretium <br>pretium dignissim nisi.</p>
+                      <button class="button_main_top_tight">READ FULL ARTICLE</button>
                   </div>
               </div>
+           </div>
+       </div>
+       <div class="main_fourth d-flex">
+           <div class="main_fourth_left">
+               <img src="../assets/images/info52x.jpg" alt="">
 
-          </div>
+           </div>
+           <div class="main_fourth_right">
+               <img src="../assets/images/info12x.jpg" alt="">
 
-      </div>
+           </div>
+       </div>
   </div>
 </template>
 
@@ -203,13 +213,13 @@ export default {
             .main_third_top {
                 img {
                    width: 540px;
-                  height: 605px;
+                   height: 685px;
                 }
                 .main_third_top_right {
                     background: black;
                     width: 570px;
-                    height: 605px;
-                    p {
+                    height: 685px;
+                    .meggy {
                         color: #9BA59E;
                         margin-top: 130px;
                         margin-left: 120px;
@@ -222,18 +232,56 @@ export default {
                     .stars {
                         color: white;
                         margin-top: 30px;
+                        margin-left: 120px;
                     }
                     .line_main_third {
-                        height: 2px;
-                        color: white;
-                        width: 40px;
+                        border-top: 1px solid white;
+                        width: 60px;
                         margin-left: 120px;
                         margin-top: 40px;
+                    }
+                    .text_main_top_right {
+                        color:#9BA59E;
+                        margin-top: 40px;
+                        margin-left: 120px;
+                    }
+                    .button_main_top_tight {
+                        color: white;
+                        background: black;
+                        border: 1px solid white;
+                        margin-left: 120px;
+                        margin-top: 30px;
+                        width: 212px;
+                        height: 39px;
                     }
 
                 }
             }
         }
+    }
+    .main_fourth {
+        margin-left: 180px;
+        margin-top: 60px;
+        .main_fourth_left {
+            img {
+                width: 520px;
+                height: 600px;
+                position: relative;
+                margin-right: 40px;
+                filter: brightness(50%);
+                
+            }
+        }
+        .main_fourth_right {
+            img {
+                width: 520px;
+                position: relative;
+                height: 600px;
+                filter: brightness(50%);
+                
+            }
+        }
+
     }
     
 }
