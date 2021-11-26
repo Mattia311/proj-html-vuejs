@@ -223,6 +223,21 @@
                 </div>
             </div>
         </div>
+        <div class="main_nine">
+            <div>
+                <img src="../assets/images/hero42x.jpg" alt="">
+            </div>
+            <div class="main_nine_text">
+                <div class="d-flex text_main_nine justify-content-between">
+                    <h2>BRAISED <br> ABALONE</h2>
+                    <p class="prezzo">$52</p>
+                </div>
+                <div class="line"></div>
+                <p class="text_main_top_right">Non arcu mauris tortor ultrices mollis tellus <br>euismod fermentum. Habitant amet tincidunt <br>id sapien accumsan sed at. </p>
+                <button>VIEW IN THE MENU</button>
+
+            </div>
+        </div>
   </div>
 </template>
 
@@ -657,6 +672,58 @@ export default {
             }
 
         }
+    }
+    .main_nine {
+        margin-top: 130px;
+        position: relative;
+        img {
+            width: 1447px;
+            height: 700px;
+        }
+        .main_nine_text {
+            position: absolute;
+            top: 80px;
+            height: 550px;
+            margin-left: 200px;
+            width: 500px;
+            background: black;
+            .line {
+                border-top: 1px solid #9BA59E;;
+                width: 45px;
+                margin-top: 8px;
+                margin-top: 40px;
+                margin-left: 75px;
+                margin-bottom: 25px;
+            }
+            .text_main_nine {
+                padding-top: 80px;
+                width: 70%;
+                margin: auto;
+            }
+            h2 {
+                color: white;
+            }
+            .prezzo {
+                    color: white;
+                }
+            .text_main_top_right {
+                color: #9BA59E;
+                font-size: 15px;
+                margin-left: 75px;
+                margin-bottom: 70px;
+                line-height: 25px;
+                }
+            button {
+                background: black;
+                color: white;
+                border: 1px solid white;
+                margin-left: 75px;
+                width: 200px;
+                height: 39px;
+            }
+
+        }
+        
     }
     
 }
