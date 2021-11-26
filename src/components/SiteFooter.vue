@@ -59,7 +59,7 @@ export default {
     }
   }
   .copy {
-    background: black;
+    background: #5c3d27;
     color: white;
     height: 40px;
     font-size: 10px;

@@ -259,6 +259,7 @@ export default {
             margin-top: 40px;
             font-weight: 700;
             margin-bottom: 40px;
+            color: #5c3d27;
           }
           .firma {
             margin-top: 20px;
@@ -266,7 +267,7 @@ export default {
           p {
               color: #A5A6AE;
               .strong {
-                  color: black;
+                  color: #5c3d27;
               }
           }
         }
@@ -282,6 +283,7 @@ export default {
         margin-top: 140px;
         h5 {
             margin-top: 40px;
+            color: #5c3d27;
         }
         hr {
             width: 60px;
@@ -316,7 +318,7 @@ export default {
             padding-right: 0px;
         }
         .col-5 {
-            background: black;
+            background: #5c3d27;
             .text {
                 margin-top: 150px;
                 margin-left: 90px;
@@ -345,7 +347,7 @@ export default {
                 }
                 button {
                     margin-left: 170px;
-                    background: black;
+                    background: #5c3d27;
                     color: white;
                     border: 1px solid white;
                     font-size: 13px;
@@ -370,7 +372,7 @@ export default {
                    height: 685px;
                 }
                 .main_third_top_right {
-                    background: black;
+                    background: #5c3d27;
                     width: 570px;
                     height: 685px;
                     .meggy {
@@ -401,7 +403,7 @@ export default {
                     }
                     .button_main_top_right {
                         color: white;
-                        background: black;
+                        background: #5c3d27;
                         border: 1px solid white;
                         margin-left: 120px;
                         margin-top: 30px;
@@ -560,7 +562,7 @@ export default {
             }
         }
         .col-5 {
-            background: black;
+            background: #5c3d27;
             .main_seven_text_top {
                 margin-left: 60px;
                 color: #9BA59E;
@@ -587,7 +589,7 @@ export default {
             }
             button {
                 margin-left: 140px;
-                background: black;
+                background: #5c3d27;
                 color: white;
                 width: 221px;
                 height: 40px;
@@ -686,7 +688,7 @@ export default {
             height: 550px;
             margin-left: 200px;
             width: 500px;
-            background: black;
+            background: #5c3d27;
             .line {
                 border-top: 1px solid #9BA59E;;
                 width: 45px;
@@ -714,7 +716,7 @@ export default {
                 line-height: 25px;
                 }
             button {
-                background: black;
+                background: #5c3d27;
                 color: white;
                 border: 1px solid white;
                 margin-left: 75px;

@@ -46,7 +46,7 @@ export default {
 <style lang="scss">
 .header {
     .header_left {
-        background: black;
+        background: #5c3d27;
         height: 800px;
         width: 600px;
         .img_header_left {
@@ -83,7 +83,7 @@ export default {
                 }
                 button {
                     margin-left: 140px;
-                    background: black;
+                    background: #5c3d27;
                     color: white;
                     border: 1px solid white;
                     font-size: 13px;
