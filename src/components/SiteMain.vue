@@ -606,6 +606,7 @@ export default {
                 margin-left: 40px;
                 margin-top: 80px;
                 margin-bottom: 60px;
+                color: #5c3d27;
             }
             .d-flex {
                 margin-left: 40px;
@@ -614,6 +615,10 @@ export default {
             p {
                 margin-left: 40px;
                 margin-bottom: 30px;
+                color: #5c3d27;
+            }
+            h4 {
+                color: #5c3d27;
             }
             
 
@@ -663,6 +668,7 @@ export default {
                 margin-left: 40px;
                 margin-top: 80px;
                 margin-bottom: 60px;
+                color: #5c3d27;
             }
             .d-flex {
                 margin-left: 40px;
@@ -671,6 +677,10 @@ export default {
             p {
                 margin-left: 40px;
                 margin-bottom: 30px;
+                color: #5c3d27;
+            }
+            h4 {
+                color: #5c3d27;
             }
 
         }

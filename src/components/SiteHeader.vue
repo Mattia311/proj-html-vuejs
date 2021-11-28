@@ -23,22 +23,19 @@
               <img class="img_header" src="../assets/images/slider52x.jpg" alt="">
           </div>
           <div>
-              <ul class="d-flex"  >
-                  <li v-for="(list,index) in menu" :key="index"><nav><a href="" :list="list">{{list}}</a></nav></li>
-                  <li><nav><a href=""><i class="fas fa-shopping-cart"></i></a></nav></li>
-              </ul>
+              <SiteMenu/>
           </div>
       </div>
   </div>
 </template>
 
 <script>
+import SiteMenu from './SiteMenu.vue';
+
 export default {
-    data() {
-        return {
-            menu : ['Home','Culinary History','Our Team','Our Menu','Takeout','Bulletin','Reservation',]
-        }
-    }
+    components: {
+    SiteMenu
+  }
 
 }
 </script>
