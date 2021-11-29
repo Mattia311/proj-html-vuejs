@@ -25,6 +25,21 @@
           <div>
               <SiteMenu/>
           </div>
+          <div class="fixed">
+              <div class="fixed_top text-center">
+                  <img src="../assets/images/svgexport-3.svg" alt="">
+                  <p>Demos</p>
+              </div>
+              <div class="fixed_bottom">
+                  <div class="d-flex text-center">
+                      <p class="prezzo1">$</p>
+                      <p class="prezzo2">39</p>
+                  </div>
+                  <div class="text-center">
+                      <p>On sale</p>
+                  </div>
+              </div>
+          </div>
       </div>
   </div>
 </template>
@@ -89,6 +104,10 @@ export default {
                     margin-top: 40px;
 
                 }
+                button:hover {
+                    background: white;
+                    color: #5c3d27;
+                }
             }
         }
         
@@ -106,6 +125,7 @@ export default {
             li {
             list-style: none;
             margin-right: 35px;
+            }
             a {
                 text-decoration: none;
                 color: white;
@@ -116,9 +136,45 @@ export default {
                 color: white;
                 border: 1px solid white;
             }
-        }
-        }
         
+        }
+        .fixed {
+            position: absolute;
+            top: 130px;
+            right: 1.5%;
+            position: fixed;
+            z-index: 1;
+            .fixed_top {
+                background: white;
+                border-radius: 10px;
+                width: 70px;
+                box-shadow:  2px  2px 2px black,
+                             -2px -2px 2px black,
+                             2px -2px 2px black,
+                             -2px  2px 2px black;
+                
+            }
+            .fixed_bottom {
+                background: white;
+                width: 70px;
+                border-radius: 10px;
+                box-shadow:  2px  2px 2px black,
+                             -2px -2px 2px black,
+                             2px -2px 2px black,
+                             -2px  2px 2px black;
+                .prezzo1 {
+                    color: yellowgreen;
+                    margin-left: 10px;
+                    margin-bottom: 0%;
+                }
+                .prezzo2 {
+                    color: yellowgreen;
+                    font-size: 26px;
+                    margin-bottom: 0%;
+                }
+                
+            }
+        }
     }
 }
 

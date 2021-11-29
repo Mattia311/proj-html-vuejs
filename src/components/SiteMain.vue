@@ -9,7 +9,11 @@
               <img class="firma" src="../assets/images/signature-200x172.jpg" alt="">
           </div>
           <div class="main_top_right">
-              <img src="../assets/images/info22x.jpg" alt="">
+              
+                  <img src="../assets/images/info22x.jpg" alt="">
+              <div class="text_main_top_right">
+                  <p>CALIFORNIA ROLLS - $22</p>
+              </div>
           </div>
       </div>
       <div class="container main_bottom">
@@ -112,20 +116,29 @@
            <h2 class="text-center">Lates news e promotions</h2>
            <div class="container main_six_images">
                <div class="row">
-                   <div class="col-4 text-center">
-                       <img src="../assets/images/blog92x.jpg" alt="">
+                   <div class="col-4 text-center one">
+                       <img class="img_main_six_one" src="../assets/images/blog92x.jpg" alt="">
                        <h3>THE BEST COFFEE IN TOWN</h3>
                        <p>By admin | january 7th, 2020 | Categories: News</p>
+                       <i class="fas fa-link hover"></i>
+                       <h4 class="text-center hover">THE BEST COFFEE IN TOWN</h4>
+                       <p class="news hover">News</p>
                    </div>
-                   <div class="col-4 text-center">
-                       <img src="../assets/images/blog72x.jpg" alt="">
+                   <div class="col-4 text-center two">
+                       <img class="img_main_six_two" src="../assets/images/blog72x.jpg" alt="">
                        <h3>DISCOVER OUR NEW MENU</h3>
                        <p>By admin | january 7th, 2020 | Categories: News</p>
+                       <i class="fas fa-link hover"></i>
+                       <h4 class="text-center hover">DISCOVER OUR NEW MENU</h4>
+                       <p class="news hover">News</p>
                     </div>
-                   <div class="col-4 text-center">
-                       <img src="../assets/images/blog82x.jpg" alt="">
+                   <div class="col-4 text-center three">
+                       <img class="img_main_six_three" src="../assets/images/blog82x.jpg" alt="">
                        <h3>WE NOW ACCEPT SQUARE!</h3>
                        <p>By admin | january 7th, 2020 | Categories: News</p>
+                       <i class="fas fa-link hover"></i>
+                       <h4 class="text-center hover">WE NOW ACCEPT SQUARE!</h4>
+                       <p class="news hover">News</p>
                     </div>
                </div>
            </div>
@@ -272,10 +285,27 @@ export default {
           }
         }
         .main_top_right {
-          img {
+            position: relative;
+            img {
               width: 476px;
               margin-left: 130px;
-          }
+            }
+            .text_main_top_right {
+                visibility: hidden;
+                position: absolute;
+                bottom: 0;
+                color: white;
+                margin-left: 300px;
+            }
+            img:hover {
+                width: 500px;
+                transition: 1s;
+            }
+            
+
+        }
+        .main_top_right:hover .text_main_top_right {
+                visibility: visible;
         }
     }
     .main_bottom {
@@ -304,6 +334,9 @@ export default {
             height: 36px;
             margin-top: 17px;
             margin-bottom: 150px;
+        }
+        button:hover {
+            border: 2px solid black;
         }
     }
     .main_second {
@@ -355,6 +388,10 @@ export default {
                     height: 36px;
                     margin-top: 40px;
 
+                }
+                button:hover {
+                    background: white;
+                    color: #5c3d27;
                 }
             }
         }
@@ -410,7 +447,20 @@ export default {
                         width: 212px;
                         height: 39px;
                     }
+                    .button_main_top_right:hover {
+                        background: white;
+                        color: #5c3d27;
+                    }
 
+                }
+                .main_third_top_right:hover {
+                    width: 590px;
+                    height: 700px;
+                    position: absolute;
+                    right: 11%;
+                    margin-top: -9px;
+                    transition: 1s;
+                    cursor: pointer;
                 }
             }
         }
@@ -462,6 +512,10 @@ export default {
                     width: 212px;
                     height: 39px;
                 }
+                .button_main_top_right:hover {
+                    background: white;
+                    color: #5c3d27;
+                }
             }
             
         }
@@ -507,6 +561,10 @@ export default {
                     width: 212px;
                     height: 39px;
                 }
+                .button_main_top_right:hover {
+                    background: white;
+                    color: #5c3d27;
+                }
             }
         }
 
@@ -528,6 +586,7 @@ export default {
         }
     }
     .main_six {
+        position: relative;
         h2 {
             margin-top: 70px;
             margin-bottom: 50px;
@@ -538,17 +597,91 @@ export default {
             margin: auto;
         }
         
-        img {
+        .img_main_six_one {
             width: 100%;
             height: 430px;
         }
+        .img_main_six_two {
+            width: 100%;
+            height: 430px;
+        }
+        .img_main_six_three {
+            width: 100%;
+            height: 430px;
+        }
+        .img_main_six_one:hover  {
+            height: 500px;
+            width: 340px;
+            left: 0%;
+            z-index: 2;
+            transition: 2s;
+            filter: brightness(50%);
+            margin-bottom: -200px;
+        }
+        .img_main_six_two:hover  {
+            height: 500px;
+            width: 340px;
+            left: 0%;
+            z-index: 2;
+            transition: 2s;
+            filter: brightness(50%);
+            margin-bottom: -200px;
+        }
+        .img_main_six_three:hover  {
+            height: 500px;
+            width: 340px;
+            left: 0%;
+            z-index: 2;
+            transition: 2s;
+            filter: brightness(50%);
+            margin-bottom: -200px;
+        }
+        .three:hover .hover{
+            visibility: visible;
+            transition: 2s;
+        }
+        .one:hover .hover{
+            visibility: visible;
+        }
+        .two:hover .hover{
+            visibility: visible;
+            transition: 2s;
+        }
         p {
             font-size: 8px;
+            visibility: visible;
+            z-index: 1;
 
         }
         h3 {
             font-size: 20px;
             margin-top: 30px;
+            visibility: visible;
+            z-index: 1;
+        }
+        i {
+            
+            position: absolute;
+            top: 250px;
+            color: white;
+        }
+        h4 {
+            
+            position: absolute;
+            top: 280px;
+            color: white;
+            margin-left: 15px;
+        }
+        .news {
+            
+            position: absolute;
+            top: 320px;
+            color: white;
+            margin-left: 163px;
+
+        }
+        .hover {
+            visibility: hidden;
         }
         
     }
@@ -595,6 +728,10 @@ export default {
                 height: 40px;
                 border: 1px solid white;
                 font-size: 13px;
+            }
+            button:hover {
+                background: white;
+                color: #5c3d27;
             }
         }
     }
@@ -732,6 +869,10 @@ export default {
                 margin-left: 75px;
                 width: 200px;
                 height: 39px;
+            }
+            button:hover {
+                background: white;
+                color: #5c3d27;
             }
 
         }
