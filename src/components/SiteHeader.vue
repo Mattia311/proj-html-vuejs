@@ -148,20 +148,20 @@ export default {
                 background: white;
                 border-radius: 10px;
                 width: 70px;
-                box-shadow:  2px  2px 2px black,
-                             -2px -2px 2px black,
-                             2px -2px 2px black,
-                             -2px  2px 2px black;
+                box-shadow:  2px  2px 2px rgb(143, 137, 137),
+                             -2px -2px 2px rgb(143, 137, 137),
+                             2px -2px 2px rgb(143, 137, 137),
+                             -2px  2px 2px rgb(143, 137, 137);
                 
             }
             .fixed_bottom {
                 background: white;
                 width: 70px;
                 border-radius: 10px;
-                box-shadow:  2px  2px 2px black,
-                             -2px -2px 2px black,
-                             2px -2px 2px black,
-                             -2px  2px 2px black;
+                box-shadow:  2px  2px 2px rgb(143, 137, 137),
+                             -2px -2px 2px rgb(143, 137, 137),
+                             2px -2px 2px rgb(143, 137, 137),
+                             -2px  2px 2px rgb(143, 137, 137);
                 .prezzo1 {
                     color: yellowgreen;
                     margin-left: 10px;

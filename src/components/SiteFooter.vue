@@ -14,7 +14,14 @@
     </div>
     <div class="copy text-center">
       <p>Copyright 2012 - 2019 Avada | All Rights Reserved | Powered by WordPress | ThemeFusion</p>
+    </div>
+    <div class="arrow_top">
+      <div>
+        <i class="fas fa-chevron-up"></i>
+      </div>
+      <div class="block">
 
+      </div>
     </div>
 
   </div>
@@ -32,6 +39,7 @@ export default {
   .image {
    img {
     width: 1443px;
+    z-index: 0;
    }
   }
   .text_footer {
@@ -64,6 +72,27 @@ export default {
     height: 40px;
     font-size: 10px;
     padding-top: 13px;
+  }
+  .arrow_top {
+    
+    padding-top: 30px;
+    i {
+      background: gray;
+      width: 40px;
+      height: 40px;
+      padding-left: 12px;
+      padding-top: 12px;
+      position: fixed;
+      bottom: 30px;
+      margin-left: 1200px;
+    }
+    .block {
+      width: 100%;
+      height: 30px;
+      background:#5c3d27 ;
+      position: fixed;
+      bottom: 0;
+    }
   }
 
 }
